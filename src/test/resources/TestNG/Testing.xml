@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="4" thread-count="10"
+	parallel="tests">
+
+	<test name="LoginPageNegativeTestCase">
+
+		
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+		<parameter name="browserName" value="chrome" />
+
+		<classes>
+			<class name="testngsession.LoginPageNegativeTestCase" />
+		</classes>
+	</test>
+
+	<test name="AmazonTest">
+
+		<parameter name="url" value="https://www.amazon.com" />
+		<parameter name="browserName" value="chrome" />
+
+		<classes>
+			<class name="testngsession.AmazonTest" />
+		</classes>
+	</test>
+
+	<test name="AmazonTestWithBM">
+
+		<parameter name="url" value="https://www.amazon.com" />
+		<parameter name="browserName" value="chrome" />
+
+		<classes>
+			<class name="testngsession.AmazonTestWithBM" />
+		</classes>
+	</test>
+
+</suite>

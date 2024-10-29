@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [TestNG Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="10" parallel="tests" name="LoginPageNegativeTestCase(failed)" verbose="4">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login"/>
+    <classes>
+      <class name="testngsession.LoginPageNegativeTestCase">
+        <methods>
+          <include name="checkLoginPage"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testngsession.LoginPageNegativeTestCase -->
+    </classes>
+  </test> <!-- LoginPageNegativeTestCase(failed) -->
+  <test thread-count="10" parallel="tests" name="AmazonTest(failed)" verbose="4">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+    <classes>
+      <class name="testngsession.AmazonTest">
+        <methods>
+          <include name="searchBox"/>
+          <include name="setUp"/>
+          <include name="footerLink"/>
+          <include name="titlecheck"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testngsession.AmazonTest -->
+    </classes>
+  </test> <!-- AmazonTest(failed) -->
+  <test thread-count="10" parallel="tests" name="AmazonTestWithBM(failed)" verbose="4">
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+    <classes>
+      <class name="testngsession.AmazonTestWithBM">
+        <methods>
+          <include name="titleTest"/>
+          <include name="searchExistTest"/>
+          <include name="isHelpExistTest"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testngsession.AmazonTestWithBM -->
+    </classes>
+  </test> <!-- AmazonTestWithBM(failed) -->
+</suite> <!-- Failed suite [TestNG Regression Suite] -->
